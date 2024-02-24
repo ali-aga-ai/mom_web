@@ -1,0 +1,23 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Add this import to your CSS file or index.js */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+/* Your custom styles go here */
+
+
+  .hover_image {
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.hover_image:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+}
+.car_bg{
+  background-color: rgb(232, 232, 232);
+}
+.doc_bg{
+  background-color: rgb(202, 251, 251);
+}
