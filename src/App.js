@@ -1,4 +1,4 @@
-// App.js
+// App.js hey
 import React, { useRef, useState } from 'react';
 import Navbar from './components/Navbar';
 import AboutSection from './components/AboutSection';
