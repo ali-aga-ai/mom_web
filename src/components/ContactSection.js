@@ -1,12 +1,16 @@
 // ContactUsSection.js
 import React, { useState } from 'react';
-import Email from './Email';
 
 const ContactUsSection = () => {
-  const [showEmailForm, setShowEmailForm] = useState(false);
+  const [showWhatsAppForm, setShowWhatsAppForm] = useState(false);
+  const [showInstagramForm, setShowInstagramForm] = useState(false);
 
-  const handleButtonClick = () => {
-    setShowEmailForm(true);
+  const handleWhatsAppClick = () => {
+    setShowWhatsAppForm(true);
+  };
+
+  const handleInstagramClick = () => {
+    window.open('https://www.instagram.com/healandhope_holistichealth/?igsh=MXgzdjBwZWNnZ2FzeA%3D%3D', '_blank');
   };
 
   return (
@@ -17,15 +21,24 @@ const ContactUsSection = () => {
         <p className="text-sm lg:text-base mb-4">
           We love our customers, so feel free to visit during normal business hours.
         </p>
-        <button onClick={handleButtonClick} className="bg-gray-900 text-white px-6 py-2 rounded-full inline-flex items-center mb-4">
-          <i className="fab fa-whatsapp mr-2" />Contact Us on Email
+
+        <button
+          onClick={handleWhatsAppClick}
+          className="bg-green-500 text-white px-6 py-2 rounded-full inline-flex items-center mb-4"
+        >
+          <i className="fab fa-whatsapp mr-2" /> Contact Us on WhatsApp
         </button>
 
-        {showEmailForm && <Email />}
+        {showWhatsAppForm && <p>Send us a message at +1234567890 on WhatsApp!</p>}
+        <br></br>
+        <button
+          onClick={handleInstagramClick}
+          className="bg-pink-500 text-white px-6 py-2 rounded-full inline-flex items-center mb-4"
+        >
+          <i className="fab fa-instagram mr-2" /> Contact Us on Instagram
+        </button>
+
         
-        <div className="mb-4">
-          {/* ... other content */}
-        </div>
       </div>
     </section>
   );

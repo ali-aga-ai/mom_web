@@ -1,0 +1,10 @@
+add customer testimonials in heading redirect
+
+figure out better UI especially styles.css
+change speed of autoplay
+
+figure calendly 
+
+figure better for deployment like npm run dev etc
+
+do changes such that person from client side cannot figure out calendly link/private info like those idiots who had tokens used on client side

@@ -3,12 +3,13 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './MyCarousel.css';
 
+
 const MyCarousel = () => {
-  const img1 = require('./img1.jpeg');
-  const img2 = require('./img4.jpeg');
-  const img3 = require('./img5.jpeg');
-  const img4 = require('./img6.jpeg');
-  const img5 = require('./img7.jpeg');
+  const img1 = require('./images/img1.jpeg');
+  const img2 = require('./images/img4.jpeg');
+  const img3 = require('./images/img5.jpeg');
+  const img4 = require('./images/img6.jpeg');
+  const img5 = require('./images/img7.jpeg');
 
   useEffect(() => {
     // Preload images

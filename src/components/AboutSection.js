@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 
 const AboutSection = () => {
 
+  const [experience,setExperience] = useState()
 
-  const exp = require('./mis.png')
-  const edu = require('./edu.webp')
+  const exp = require('./images/mis.png')
+  const edu = require('./images/edu.webp')
+
+  useEffect(() => {
+    const currentYear = new Date().getFullYear();
+    setExperience(currentYear - 2000);
+  }, []); 
 
   return (
     <section className="about-law mt-10 mb-10">
@@ -26,7 +33,7 @@ const AboutSection = () => {
                 Experience
               </h3>
               <p className="text-gray-600">
-              Consulting homeopath and therapist with 23 years of experience in women and children's health. Practicing doctor with expertise in REBT therapy for 15 years. Conducted life skill workshops as a trainer at Highbrow Academy. Former contributor and ex-sub-editor at the National Journal of Homeopathy. Bringing 15 years of dedicated psychotherapeutic practice to enhance well-being              </p>
+              Consulting homeopath and therapist with {experience} years of experience in women and children's health. Practicing doctor with expertise in REBT therapy for {experience - 8} years. Conducted life skill workshops as a trainer at Highbrow Academy. Former contributor and ex-sub-editor at the National Journal of Homeopathy. Bringing {experience - 8} years of dedicated psychotherapeutic practice to enhance well-being              </p>
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center mt-8">
