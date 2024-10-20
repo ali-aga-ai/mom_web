@@ -29,7 +29,7 @@ const ContactUsSection = () => {
           <i className="fab fa-whatsapp mr-2" /> Contact Us on WhatsApp
         </button>
 
-        {showWhatsAppForm && <p>Send us a message at +1234567890 on WhatsApp!</p>}
+        {showWhatsAppForm && <p>Send us a message at 8104597978 on WhatsApp!</p>}
         <br></br>
         <button
           onClick={handleInstagramClick}

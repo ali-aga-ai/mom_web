@@ -32,7 +32,6 @@ export default function Home() {
       <CustomerTestimonials />
       <MyCarousel />
       <ContactSection />
-      <CalendlyComponent sectionRef={calRef} />
       <GoogleMapsSection />
       <Footer />
     </>
