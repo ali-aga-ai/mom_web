@@ -1,7 +1,7 @@
 // ContactUsSection.js
 import React, { useState } from 'react';
 
-const ContactUsSection = () => {
+const ContactUsSection = ({ sectionRef }) => {
   const [showWhatsAppForm, setShowWhatsAppForm] = useState(false);
   const [showInstagramForm, setShowInstagramForm] = useState(false);
 
@@ -14,7 +14,7 @@ const ContactUsSection = () => {
   };
 
   return (
-    <section className="contact-us bg-white py-16">
+    <section className="contact-us bg-white py-16" ref={sectionRef}>
       <div className="container mx-auto px-4 lg:px-8 text-center">
         <h2 className="text-3xl lg:text-5xl font-bold text-gray-700 mb-8">CONTACT US</h2>
         <p className="text-base lg:text-lg mb-2">Better yet, see us in person!</p>
