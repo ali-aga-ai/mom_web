@@ -8,6 +8,7 @@ import GoogleMapsSection from './GoogleMapsSection'
 import Footer from './Footer'
 import CustomerTestimonials from './reviews2'
 import CalendlyComponent from './CalendlyComponent'
+import Diseases from './Diseases'
 
 export default function Home() {
   const calRef = useRef(null)
@@ -30,6 +31,7 @@ export default function Home() {
       </div>
       <AboutSection />
       <CustomerTestimonials />
+      <Diseases />
       <MyCarousel />
       <ContactSection sectionRef={calRef} />
       <GoogleMapsSection />

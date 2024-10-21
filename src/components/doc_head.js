@@ -2,15 +2,16 @@ import React from 'react'
 
 const HealthPartnerSection = ({ handleButtonClick }) => {
   const image = require('./images/logo.jpeg')
-
+  const whiteLogo = require('./images/whigteLogo.jpeg')
+  const logo3 = require('./images/whigteLogo.jpeg')
   return (
     <div className='flex flex-col md:flex-row'>
       {/* Left side with image */}
       <div className='w-full md:w-1/2'>
         <img
-          src={image}
+          src={whiteLogo}
           alt='Medical professional in a hospital setting'
-          className='w-full h-[300px] md:h-screen object-cover' // Reduced height on mobile
+          className='w-full h-[300px] md:h-screen object-cover'
         />
       </div>
       {/* Right side with content */}
@@ -26,7 +27,7 @@ const HealthPartnerSection = ({ handleButtonClick }) => {
             Personalized care that puts you first
           </p>
           <button
-            className='bg-transparent border border-black text-black py-2 px-6 md:py-2 md:px-10 hover:bg-white hover:text-black transition duration-300'
+            className='bg-transparent hover-black border border-black text-black py-2 px-6 md:py-2 md:px-10 hover:bg-black hover:text-white transition duration-300'
             onClick={() => handleButtonClick('cal')}
           >
             SCHEDULE A VISIT
