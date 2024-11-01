@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HealthPartnerSection = ({ handleButtonClick }) => {
+const HealthPartnerSection = () => {
   const image = require('./images/logo.jpeg')
   const whiteLogo = require('./images/whigteLogo.jpeg')
   const logo3 = require('./images/whigteLogo.jpeg')
@@ -28,7 +28,7 @@ const HealthPartnerSection = ({ handleButtonClick }) => {
           </p>
           <button
             className='bg-transparent hover-black border border-black text-black py-2 px-6 md:py-2 md:px-10 hover:bg-black hover:text-white transition duration-300'
-            onClick={() => handleButtonClick('cal')}
+            onClick={() => {}}
           >
             SCHEDULE A VISIT
           </button>

@@ -11,29 +11,19 @@ import CalendlyComponent from './CalendlyComponent'
 import Diseases from './Diseases'
 
 export default function Home() {
-  const calRef = useRef(null)
 
-  const handleButtonClick = (sectionRef) => {
-    switch (sectionRef) {
-      case 'cal':
-        window.scrollTo({ top: calRef.current.offsetTop, behavior: 'smooth' })
-        break
-      default:
-        break
-    }
-  }
 
   return (
     <>
       <div className='relative bg-black min-h-screen'>
         <Navbar />
-        <HealthPartnerSection handleButtonClick={handleButtonClick} />
+        <HealthPartnerSection  />
       </div>
       <AboutSection />
       <CustomerTestimonials />
       <Diseases />
       <MyCarousel />
-      <ContactSection sectionRef={calRef} />
+      <ContactSection  />
       <GoogleMapsSection />
       <Footer />
     </>
