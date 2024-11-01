@@ -40,25 +40,25 @@ const Navbar = () => {
             {blogDropdown && (
               <div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10'>
                 <a
-                  href='/blogs/health'
+                  href='/'
                   className='block px-4 py-2 text-gray-800 hover:bg-gray-100'
                 >
                   Individualized Treatment Plans
                 </a>
                 <a
-                  href='/blogs/wellness'
+                  href='/'
                   className='block px-4 py-2 text-gray-800 hover:bg-gray-100'
                 >
                   Natural Remedies
                 </a>
                 <a
-                  href='/blogs/lifestyle'
+                  href='/'
                   className='block px-4 py-2 text-gray-800 hover:bg-gray-100'
                 >
                   Preventive Care
                 </a>
                 <a
-                  href='/blogs/lifestyle'
+                  href='/'
                   className='block px-4 py-2 text-gray-800 hover:bg-gray-100'
                 >
                   Holistic Approach to Wellness
@@ -97,13 +97,13 @@ const Navbar = () => {
             {galleryDropdown && (
               <div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10'>
                 <a
-                  href='/gallery/events'
+                  href='/'
                   className='block px-4 py-2 text-gray-800 hover:bg-gray-100'
                 >
                   Our Clinic
                 </a>
                 <a
-                  href='/gallery/success-stories'
+                  href='/'
                   className='block px-4 py-2 text-gray-800 hover:bg-gray-100'
                 >
                   Success Stories
